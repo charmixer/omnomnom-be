@@ -10,11 +10,11 @@ using Newtonsoft.Json;
 
 namespace charmixer
 {
-    public static class GetIngridiens
+    public static class GetIngredients
     {
-        [FunctionName("GetIngridiens")]
+        [FunctionName("GetIngredients")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "ingridiens/")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "ingredients/")] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
